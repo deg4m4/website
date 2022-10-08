@@ -1,0 +1,106 @@
+@import "./conf.scss";
+
+.homeText {
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include padding-x;
+}
+
+.textPrimary {
+    color: getVar("primary-color");
+}
+
+.titles {
+    margin: 40px 0;
+
+    @media screen and (max-width: $md-max-width) {
+        margin: 15px 0;
+    }
+}
+
+.mainTitle {
+    font-size: 4rem;
+    font-weight: 600;
+
+    @media screen and (max-width: $md-max-width) {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+}
+
+.subTitle {
+    font-size: 1.7rem;
+    opacity: .4;
+
+    @media screen and (max-width: $md-max-width) {
+        font-size: 1.5rem;
+    }
+}
+
+.des {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: $ld-max-width) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: $md-max-width) {
+        flex-wrap: wrap;
+        margin: 45px 0;
+    }
+}
+
+.desBlock {
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    margin: .5rem;
+    width: 240px;
+    padding: .6rem;
+    transition: $transition;
+
+    &>* {
+        display: block;
+    }
+
+    &:hover {
+        border-color: getVar("primary-border-color") !important;
+    }
+
+    @media screen and (max-width: $ld-max-width) {
+        width: 45%;
+    }
+
+    @media screen and (max-width: $md-max-width) {
+        width: 100%;
+    }
+}
+
+.desBlockTitle {
+    text-transform: uppercase;
+    color: getVar("primary-color");
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    
+    @media screen and (max-width: $md-max-width) {
+        font-size: 1rem;
+    }
+}
+
+.desBlockNum {
+    text-transform: uppercase;
+    color: getVar("text-color");
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 5px 0;
+
+    @media screen and (max-width: $md-max-width) {
+        font-size: 1.1rem;
+    }
+}

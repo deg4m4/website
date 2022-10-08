@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@import "./conf.scss";
+
+:root {
+  --background: rgb(5, 5, 5);
+  --primary-color: rgb(79, 61, 254);
+  --primary-border-color: rgba(80, 61, 254, 0.5);
+  --text-color: rgb(255, 255, 255);
+  --text-color-alpha: rgba(255, 255, 255, .7);
+  --btn-background: rgba(107, 114, 128, 0.05);
+}
+
+* {
+  font-family: 'DM Sans';
+  color: getVar("text-color");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: getVar("background");
+}

@@ -1,0 +1,66 @@
+@import "./conf.scss";
+
+.header {
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include padding-x;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+.navLinks {
+    margin: auto 0;
+    display: flex;
+}
+
+.navBarLinks {
+    margin: auto;
+    margin-right: 10px;
+}
+
+.navBarLinks>* {
+    color: getVar("text-color-alpha") !important;
+    margin: auto 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: $transition;
+
+    &:hover {
+        color: getVar("text-color") !important;
+    }
+
+    @media screen and (max-width: $md-max-width) {
+        display: none;
+    }
+
+}
+
+.navBarBtn>* {
+    margin: auto .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: getVar("btn-background");
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 46.48px;
+    font-size: 1.5rem;
+    border-radius: $border-radius;
+
+    &>* {
+        color: getVar("text-color-alpha") !important;
+        transition: .5s;
+
+        &:hover {
+            color: getVar("text-color") !important;
+        }
+    }
+
+}

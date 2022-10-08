@@ -1,0 +1,11 @@
+@import "./conf.scss";
+
+.logo {
+  color: getVar("text-color");
+}
+
+.mainViewText{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
