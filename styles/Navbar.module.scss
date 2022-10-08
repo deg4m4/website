@@ -1,0 +1,75 @@
+@import "../styles/conf.scss";
+
+.navbar {
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: getVar("background-navbar");
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+
+    @media screen and (max-width: $md-max-width) {
+        width: 100%;
+    }
+
+}
+
+.navbarHeader {
+    margin: auto 0;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $md-max-width) {
+        padding: 0 $padding-x-md;
+    }
+
+    button {
+        text-decoration: none;
+        font-size: 1.2rem;
+        background: getVar("btn-background");
+        border: none;
+        outline: none;
+        padding: 8px;
+        width: 46.48px;
+        font-size: 1.5rem;
+        border-radius: $border-radius;
+
+        &>* {
+            color: getVar("text-color-alpha") !important;
+            transition: .5s;
+
+            &:hover {
+                color: getVar("text-color") !important;
+            }
+        }
+
+    }
+
+}
+
+.navbarBody {
+    padding: 0 1.5rem;
+    min-height: 85vh;
+    
+    @media screen and (max-width: $md-max-width) {
+        padding: 0 $padding-x-md;
+    }
+}
+
+.logo {
+    display: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.7;
+    
+    @media screen and (max-width: $md-max-width) {
+        display: block;
+    }
+}

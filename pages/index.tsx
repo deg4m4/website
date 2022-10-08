@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Background from '../components/background'
+import Navbar from '../components/havbar'
 import Header from '../components/header'
 import HomeText from '../components/hometext'
 import styles from '../styles/Home.module.scss'
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Background />
+      <Navbar />
 
       <div className={styles.mainViewText}>
         <Header />
