@@ -39,11 +39,11 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className={styles.navBarBtn}>
-                    <button onClick={showNavbar}>
-                        <i className="fas fa-bars"></i>
-                    </button>
                     <button onClick={changeTheme}>
                         <i className="fas fa-sun"></i>
+                    </button>
+                    <button onClick={showNavbar}>
+                        <i className="fas fa-bars"></i>
                     </button>
                 </div>
             </div>
