@@ -3,7 +3,9 @@
 .cursor {
     width: 20px;
     height: 20px;
-    background: getVar("mouse-bg");
+    //background: getVar("mouse-bg");
+    background: #fff;
+    mix-blend-mode: difference;
     border-radius: 50%;
 
     position: fixed;
