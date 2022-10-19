@@ -17,7 +17,7 @@ const Cursor = () => {
     const cursorCAni = (e: HTMLElement | null) => {
         if (!e) return;
 
-        e.animate({ transform: `scale(4)`, opacity: 0 }, {
+        e.animate({ transform: `scale(4.5)`, opacity: 0 }, {
             duration: 500,
             fill: "forwards",
         })
@@ -108,6 +108,7 @@ const Cursor = () => {
     return (
         <div>
             <div className={`${styles.cursor} app-cursor`} id="app_cursor" /* style={mousePos} */>
+                <div className={`cursorBody`}></div>
                 <div id="app_cursor_c0"></div>
                 <div id="app_cursor_c1"></div>
                 <div id="app_cursor_c2"></div>

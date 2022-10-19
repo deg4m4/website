@@ -1,8 +1,8 @@
 @import "./conf.scss";
 
 .cursor {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: getVar("mouse-bg");
     border-radius: 50%;
 
@@ -16,12 +16,15 @@
     transition: opacity 500ms ease;
 
     div {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         background: getVar("mouse-bg-x");
         border-radius: 50%;
         position: absolute;
-        
     }
-
+    
+    div:first-child {
+        background: getVar("mouse-bg-x");
+        transform: scale(1.75) !important;
+    }
 }
