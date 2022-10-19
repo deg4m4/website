@@ -14,4 +14,14 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity 500ms ease;
+
+    div {
+        width: 20px;
+        height: 20px;
+        background: getVar("mouse-bg-x");
+        border-radius: 50%;
+        position: absolute;
+        
+    }
+
 }

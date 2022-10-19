@@ -5,7 +5,8 @@
 
 :root {
   --primary-color: rgb(79, 61, 254);
-  --mouse-bg: rgba(80, 61, 254, 0.637);
+  --mouse-bg: rgba(80, 61, 254, 0.2);
+  --mouse-bg-x: rgba(80, 61, 254, 0.3);
   --primary-border-color: rgba(80, 61, 254, 0.5);
   --text-color: rgb(255, 255, 255);
   --text-color-alpha: rgba(255, 255, 255, .7);
@@ -17,6 +18,7 @@
 .pink-theme {
   --primary-color: rgb(230, 0, 130);
   --mouse-bg: rgba(230, 0, 130, 0.637);
+  --mouse-bg-x: rgba(230, 0, 130, 0.3);
   --primary-border-color: rgba(230, 0, 130, 0.5);
   --text-color: rgb(255, 255, 255);
   --text-color-alpha: rgba(255, 255, 255, .7);
