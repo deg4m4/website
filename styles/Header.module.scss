@@ -26,6 +26,7 @@
 }
 
 .navBarLinks>* {
+    @include mono-text;
     color: getVar("text-color-alpha") !important;
     margin: auto 1rem;
     text-decoration: none;
@@ -36,7 +37,7 @@
         color: getVar("text-color") !important;
     }
 
-    @media screen and (max-width: $md-max-width) {
+    @media screen and (max-width: $mdx-max-width) {
         display: none;
     }
 

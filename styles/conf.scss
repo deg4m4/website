@@ -3,6 +3,7 @@
 }
 
 $md-max-width: 820px;
+$mdx-max-width: 1080px;
 $ld-max-width: 1200px;
 $padding-x: 100px;
 $padding-x-md: 20px;
@@ -16,4 +17,9 @@ $transition: .5s;
     @media screen and (max-width: $md-max-width) {
         padding: 0 $padding-x-md;
     }
+}
+
+
+@mixin mono-text {
+    font-family: 'Fira Code', monospace !important;
 }

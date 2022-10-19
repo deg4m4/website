@@ -12,7 +12,7 @@ const HomeText = () => {
                     Hi there, I&apos;m <span className={styles.textPrimary}>{meta.showname}</span>!
                 </div>
                 <div className={styles.subTitle}>
-                    A full-stack developer
+                    a computer programmer
                 </div>
             </div>
 

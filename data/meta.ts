@@ -2,5 +2,6 @@
 
 export default {
     siteName: "Parthka",
-    showname: "Parthka"
+    showname: "Parthka",
+    oneLineAbout: "A Computer Programmer"
 }

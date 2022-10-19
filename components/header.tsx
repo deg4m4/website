@@ -24,18 +24,18 @@ const Header = () => {
         <div className={styles.header}>
             <span className={styles.logo}>{meta.siteName}</span>
             <div className={styles.navLinks}>
-                <div className={styles.navBarLinks}>
+                <div className={`${styles.navBarLinks} link-class`}>
                     <Link href={"/"}>
-                        Home
+                        .home()
                     </Link>
                     <Link href={"/about"}>
-                        About
+                        .about()
                     </Link>
                     <Link href={"/blog"}>
-                        Blog
+                        .blog()
                     </Link>
                     <Link href={"/contact"}>
-                        Contact
+                        .contact()
                     </Link>
                 </div>
                 <div className={styles.navBarBtn}>

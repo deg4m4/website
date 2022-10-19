@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 @import "./conf.scss";
 
 :root {
   --primary-color: rgb(79, 61, 254);
+  --mouse-bg: rgba(80, 61, 254, 0.637);
   --primary-border-color: rgba(80, 61, 254, 0.5);
   --text-color: rgb(255, 255, 255);
   --text-color-alpha: rgba(255, 255, 255, .7);
@@ -14,6 +16,7 @@
 
 .pink-theme {
   --primary-color: rgb(230, 0, 130);
+  --mouse-bg: rgba(230, 0, 130, 0.637);
   --primary-border-color: rgba(230, 0, 130, 0.5);
   --text-color: rgb(255, 255, 255);
   --text-color-alpha: rgba(255, 255, 255, .7);
@@ -34,4 +37,17 @@ body {
   width: 100%;
   overflow-x: hidden;
   background: getVar("background");
+
+  // cursor show on mouse in body
+  &:hover .app-cursor {
+    opacity: 1 !important;
+  }
+
+  cursor: none !important;
+
+}
+
+// hide cursor
+* {
+  cursor: none;
 }

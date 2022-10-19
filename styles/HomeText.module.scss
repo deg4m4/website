@@ -33,11 +33,13 @@
 }
 
 .subTitle {
-    font-size: 1.7rem;
+    @include mono-text;
+    text-transform: capitalize;
+    font-size: 1.5rem;
     opacity: .4;
 
     @media screen and (max-width: $md-max-width) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -82,10 +84,11 @@
 }
 
 .desBlockTitle {
-    text-transform: uppercase;
+    @include mono-text;
+    text-transform: capitalize;
     color: getVar("primary-color");
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 5px;
     
     @media screen and (max-width: $md-max-width) {
@@ -94,13 +97,14 @@
 }
 
 .desBlockNum {
+    @include mono-text;
     text-transform: uppercase;
     color: getVar("text-color");
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
     margin-top: 5px 0;
 
     @media screen and (max-width: $md-max-width) {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 }

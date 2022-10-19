@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Background from '../components/background'
+import Cursor from '../components/cursor'
 import Navbar from '../components/havbar'
 import Header from '../components/header'
 import HomeText from '../components/hometext'
@@ -20,6 +21,11 @@ const Home: NextPage = () => {
         <Header />
         <HomeText />
       </div>
+
+      <h1>Hell,wd</h1>
+
+      <Cursor />
+
     </div>
   )
 }
