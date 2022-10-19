@@ -17,7 +17,7 @@ const Cursor = () => {
     const cursorCAni = (e: HTMLElement | null) => {
         if (!e) return;
 
-        e.animate({ transform: `scale(4.5)`, opacity: 0 }, {
+        e.animate({ transform: `scale(5)`, opacity: 0 }, {
             duration: 500,
             fill: "forwards",
         })
