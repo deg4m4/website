@@ -104,7 +104,7 @@ const Cursor = () => {
         }
 
     })
-
+    
     return (
         <div>
             <div className={`${styles.cursor} app-cursor`} id="app_cursor" /* style={mousePos} */>

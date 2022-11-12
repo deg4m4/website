@@ -27,4 +27,9 @@
         background: getVar("mouse-bg-x");
         transform: scale(1.75) !important;
     }
+
+    // mobile
+    @media (pointer:none), (pointer:coarse) {
+        display: none;
+    }
 }

@@ -1,11 +1,43 @@
 @import "./conf.scss";
 
 .header {
-    margin: auto 0;
+    top: 0;
+    position: sticky;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 60px;
+    margin: 20px 0;
+    transition: .2s background;
+    background: getVar("background");
 
     @include padding-x;
+
+    @media screen and (max-width: $mdx-max-width) {
+        height: 90px;
+    }
+
+    // mobile
+    @media (pointer:none), (pointer:coarse) {
+        margin: 0;
+        position: fixed !important;
+        height: 61px;
+    }
+
+}
+
+.header_scroll {
+    height: 61px;
+    background: getVar("background-header");
+    border-bottom: 1px solid getVar("header-border-color");
+}
+
+.header_bg {
+    margin: 0;
+    position: fixed !important;
+    background: getVar("background-header");
+    height: 60px;
+    border-bottom: 1px solid getVar("header-border-color");
 }
 
 .logo {
@@ -13,6 +45,8 @@
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1.7;
+    color: getVar("text-white");
+    margin: auto 0;
 }
 
 .navLinks {
@@ -26,16 +60,11 @@
 }
 
 .navBarLinks>* {
-    @include mono-text;
-    color: getVar("text-color-alpha") !important;
+    color: getVar("text-white") !important;
     margin: auto 1rem;
     text-decoration: none;
     font-size: 1.2rem;
     transition: $transition;
-
-    &:hover {
-        color: getVar("text-color") !important;
-    }
 
     @media screen and (max-width: $mdx-max-width) {
         display: none;
@@ -55,8 +84,8 @@
     width: 46.48px;
     font-size: 1.5rem;
     border-radius: $border-radius;
-    
-    &:nth-child(2){
+
+    &:nth-child(2) {
         margin-left: 1rem;
     }
 

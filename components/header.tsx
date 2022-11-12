@@ -5,6 +5,8 @@ import meta from "../data/meta";
 import styles from "../styles/Header.module.scss";
 import { useDispatch } from "react-redux";
 import { setNavState } from "../state/navState";
+import { useEffect, useState } from "react";
+import detectMob from "../util/detectMob";
 
 const Header = () => {
 
@@ -14,28 +16,37 @@ const Header = () => {
         despatch(setNavState(true))
     }
 
+
     //tmp
+    let [themePoint, setThemePoint] = useState(1);
+    let themes = ["__", "gold", "orange", "pink", "aqua", "purpal", "lightpink"];
     const changeTheme = () => {
         let b = document.body;
-        b.classList.contains("pink-theme") ? b.classList.remove("pink-theme") : b.classList.add("pink-theme")
+        b.className = ""
+        b.classList.add(`${themes[themePoint]}-theme`)
+        setThemePoint(themePoint == 6 ? 0 : themePoint + 1);
     }
 
+    // is scroll
+    let [isScroll, setIsScroll] = useState(false);
+    useEffect(() => document.onscroll = () => window.scrollY > (detectMob() ? 0 : 100) ? setIsScroll(true) : setIsScroll(false), [])
+
     return (
-        <div className={styles.header}>
+        <div className={`${styles.header} ${isScroll ? styles.header_scroll : ""}`}>
             <span className={styles.logo}>{meta.siteName}</span>
             <div className={styles.navLinks}>
                 <div className={`${styles.navBarLinks} link-class`}>
                     <Link href={"/"}>
-                        .home()
+                        Home
                     </Link>
                     <Link href={"/about"}>
-                        .about()
+                        About
                     </Link>
                     <Link href={"/blog"}>
-                        .blog()
+                        Blog
                     </Link>
                     <Link href={"/contact"}>
-                        .contact()
+                        Contact
                     </Link>
                 </div>
                 <div className={styles.navBarBtn}>

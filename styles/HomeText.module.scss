@@ -1,13 +1,18 @@
 @import "./conf.scss";
 
 .homeText {
-    min-height: 85vh;
+    margin-top: -95px;
+    min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @include padding-x;
+
+    @media screen and (max-width: $md-max-width) {
+        margin-top: 40px;
+    }
 }
 
 .textPrimary {
@@ -15,16 +20,17 @@
 }
 
 .titles {
-    margin: 40px 0;
+    margin: 30px 0;
 
     @media screen and (max-width: $md-max-width) {
-        margin: 15px 0;
+        margin: 0px;
     }
 }
 
 .mainTitle {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 500;
+    color: getVar("text-white");
 
     @media screen and (max-width: $md-max-width) {
         font-size: 2.5rem;
@@ -33,10 +39,9 @@
 }
 
 .subTitle {
-    @include mono-text;
     text-transform: capitalize;
     font-size: 1.5rem;
-    opacity: .4;
+    color: getVar("text-color") !important;
 
     @media screen and (max-width: $md-max-width) {
         font-size: 1.2rem;
@@ -44,7 +49,7 @@
 }
 
 .des {
-    margin: 30px 0;
+    margin: 15px 0;
     display: flex;
     justify-content: center;
 
@@ -54,7 +59,7 @@
 
     @media screen and (max-width: $md-max-width) {
         flex-wrap: wrap;
-        margin: 45px 0;
+        margin: 40px 0;
     }
 }
 
@@ -84,22 +89,20 @@
 }
 
 .desBlockTitle {
-    @include mono-text;
     text-transform: capitalize;
     color: getVar("primary-color");
     font-weight: 500;
     font-size: 1.05rem;
     margin-bottom: 5px;
-    
+
     @media screen and (max-width: $md-max-width) {
         font-size: 1rem;
     }
 }
 
 .desBlockNum {
-    @include mono-text;
     text-transform: uppercase;
-    color: getVar("text-color");
+    color: getVar("text-white");
     font-weight: 600;
     font-size: 1.1rem;
     margin-top: 5px 0;

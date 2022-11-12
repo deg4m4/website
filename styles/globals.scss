@@ -2,30 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 @import "./conf.scss";
-
-:root {
-  --primary-color: rgb(79, 61, 254);
-  --mouse-bg: rgba(80, 61, 254, 0.4);
-  --mouse-bg-x: rgba(80, 61, 254, 0.3);
-  --primary-border-color: rgba(80, 61, 254, 0.5);
-  --text-color: rgb(255, 255, 255);
-  --text-color-alpha: rgba(255, 255, 255, .7);
-  --btn-background: rgba(107, 114, 128, 0.05);
-  --background: rgb(5, 5, 5);
-  --background-navbar: rgba(5, 5, 5, .7);
-}
-
-.pink-theme {
-  --primary-color: rgb(230, 0, 130);
-  --mouse-bg: rgba(230, 0, 130, 0.4);
-  --mouse-bg-x: rgba(230, 0, 130, 0.3);
-  --primary-border-color: rgba(230, 0, 130, 0.5);
-  --text-color: rgb(255, 255, 255);
-  --text-color-alpha: rgba(255, 255, 255, .7);
-  --btn-background: rgba(107, 114, 128, 0.05);
-  --background: rgb(5, 5, 5);
-  --background-navbar: rgba(5, 5, 5, .7);
-}
+@import "./Colors.scss";
 
 * {
   font-family: 'DM Sans';
@@ -33,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .2s;
 }
 
 body {

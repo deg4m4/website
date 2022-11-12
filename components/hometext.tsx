@@ -9,7 +9,7 @@ const HomeText = () => {
 
             <div className={styles.titles}>
                 <div className={styles.mainTitle}>
-                    Hi there, I&apos;m <span className={styles.textPrimary}>{meta.showname}</span>!
+                    Hi There, I&apos;m <span className={styles.textPrimary}>{meta.showname}</span>!
                 </div>
                 <div className={styles.subTitle}>
                     a computer programmer
